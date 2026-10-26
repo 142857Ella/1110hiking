@@ -1,0 +1,35 @@
+{
+  "target": "kfm_impulse_Nms_per_kg",
+  "model": "Ridge",
+  "params": "a=10",
+  "features": [
+    "slope_deg",
+    "speed_mps",
+    "step_length_m"
+  ],
+  "valid_range": {
+    "slope_deg": [
+      5.2,
+      18.0
+    ],
+    "speed_mps": [
+      0.1627,
+      1.5663
+    ],
+    "step_length_m": [
+      0.2066,
+      0.7892
+    ]
+  },
+  "loso_no_calibration": {
+    "R2": 0.38873987811712796,
+    "MAE": 0.1188478923648452,
+    "RMSE": 0.15281873741854948
+  },
+  "loso_calibrated_k2": {
+    "R2": 0.6708401275535241,
+    "MAE": 0.08914979601196402,
+    "RMSE": 0.11214166969083726
+  },
+  "noise_ceiling_explained": 0.7502421818876783
+}
